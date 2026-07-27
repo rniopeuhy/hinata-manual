@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>カフェ「ひなた」</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'メイリオ', 'Meiryo', sans-serif;
+            background-color: #fff8e7;
+            color: #333;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #d4956a;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2em;
+            margin-bottom: 8px;
+        }
+        header p {
+            font-size: 1em;
+            opacity: 0.9;
+        }
+        main {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 0;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        .card h2 {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            color: #d4956a;
+        }
+        .card p {
+            line-height: 1.6;
+            margin: 4px 0;
+        }
+        .btn {
+            background-color: #d4956a;
+            color: white;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.95em;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background-color: #c4855a;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #aaa;
+            font-size: 0.8em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>☕ カフェ「ひなた」</h1>
+        <p>のんびり過ごせるカフェへようこそ</p>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>📢 お知らせ</h2>
+            <p>只今、通常営業中です。</p>
+        </div>
+
+        <div class="card">
+            <h2>🍰 本日のおすすめ</h2>
+            <p>チーズケーキ（400円）</p>
+            <button class="btn" id="detail-btn">詳しく見る</button>
+        </div>
+
+        <div class="card">
+            <h2>🕐 営業時間</h2>
+            <p>月・水・木・金：10:00 〜 19:00</p>
+            <p>土・日・祝：11:00 〜 18:00</p>
+            <p>定休日：火曜日</p>
+        </div>
+    </main>
+
+    <footer>
+        バージョン：<span id="version">1.0.0</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
